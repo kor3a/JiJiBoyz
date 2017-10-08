@@ -161,6 +161,7 @@ public class GameMenu extends JFrame {
         });
     }
 
+    // Shouldn't this be at the top?
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
