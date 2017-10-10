@@ -113,7 +113,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Noteworthy" size="13" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="jLabel3"/>
+            <Property name="text" type="java.lang.String" value="Ismail Abbas, #010173826"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel4">

@@ -47,7 +47,7 @@ public class Credits extends javax.swing.JFrame {
         jLabel2.setText("Subong Jeon, #010918466");
 
         jLabel3.setFont(new java.awt.Font("Noteworthy", 1, 13)); // NOI18N
-        jLabel3.setText("jLabel3");
+        jLabel3.setText("Ismail Abbas, #010173826");
 
         jLabel4.setFont(new java.awt.Font("Noteworthy", 1, 13)); // NOI18N
         jLabel4.setText("jLabel4");
