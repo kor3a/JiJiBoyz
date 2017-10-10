@@ -50,13 +50,13 @@ public class Credits extends javax.swing.JFrame {
         jLabel3.setText("Ismail Abbas, #010173826");
 
         jLabel4.setFont(new java.awt.Font("Noteworthy", 1, 13)); // NOI18N
-        jLabel4.setText("jLabel4");
+        jLabel4.setText("Oscar Alcaraz, #009911733");
 
         jLabel5.setFont(new java.awt.Font("Noteworthy", 1, 13)); // NOI18N
-        jLabel5.setText("jLabel5");
+        jLabel5.setText("Justin Galloway, #009610068");
 
         jLabel6.setFont(new java.awt.Font("Noteworthy", 1, 13)); // NOI18N
-        jLabel6.setText("jLabel6");
+        jLabel6.setText("Josue Ruiz, #0099660457");
 
         jButton1.setText("Back");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
