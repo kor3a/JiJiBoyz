@@ -59,51 +59,348 @@ public class Play extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        HangmanTitle = new javax.swing.JLabel();
+        Skip = new javax.swing.JButton();
+        HangmanStand = new javax.swing.JLabel();
+        A = new javax.swing.JButton();
+        B = new javax.swing.JButton();
+        C = new javax.swing.JButton();
+        D = new javax.swing.JButton();
+        E = new javax.swing.JButton();
+        F = new javax.swing.JButton();
+        G = new javax.swing.JButton();
+        H = new javax.swing.JButton();
+        I = new javax.swing.JButton();
+        J = new javax.swing.JButton();
+        K = new javax.swing.JButton();
+        L = new javax.swing.JButton();
+        M = new javax.swing.JButton();
+        N = new javax.swing.JButton();
+        O = new javax.swing.JButton();
+        P = new javax.swing.JButton();
+        Q = new javax.swing.JButton();
+        R = new javax.swing.JButton();
+        S = new javax.swing.JButton();
+        T = new javax.swing.JButton();
+        U = new javax.swing.JButton();
+        V = new javax.swing.JButton();
+        W = new javax.swing.JButton();
+        X = new javax.swing.JButton();
+        Y = new javax.swing.JButton();
+        Z = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Nanum Brush Script", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(50, 50, 255));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Hangman");
+        HangmanTitle.setFont(new java.awt.Font("Nanum Brush Script", 1, 36)); // NOI18N
+        HangmanTitle.setForeground(new java.awt.Color(50, 50, 255));
+        HangmanTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        HangmanTitle.setText("Hangman");
 
-        jButton2.setText("Skip");
+        Skip.setText("Skip");
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/hangmanStand.png"))); // NOI18N
+        HangmanStand.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/hangmanStand.png"))); // NOI18N
+
+        A.setText("A");
+        A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AActionPerformed(evt);
+            }
+        });
+
+        B.setText("B");
+        B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BActionPerformed(evt);
+            }
+        });
+
+        C.setText("C");
+        C.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CActionPerformed(evt);
+            }
+        });
+
+        D.setText("D");
+        D.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DActionPerformed(evt);
+            }
+        });
+
+        E.setText("E");
+        E.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EActionPerformed(evt);
+            }
+        });
+
+        F.setText("F");
+        F.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FActionPerformed(evt);
+            }
+        });
+
+        G.setText("G");
+        G.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GActionPerformed(evt);
+            }
+        });
+
+        H.setText("H");
+        H.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HActionPerformed(evt);
+            }
+        });
+
+        I.setText("I");
+        I.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                IActionPerformed(evt);
+            }
+        });
+
+        J.setText("J");
+        J.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JActionPerformed(evt);
+            }
+        });
+
+        K.setText("K");
+        K.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                KActionPerformed(evt);
+            }
+        });
+
+        L.setText("L");
+        L.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LActionPerformed(evt);
+            }
+        });
+
+        M.setText("M");
+        M.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MActionPerformed(evt);
+            }
+        });
+
+        N.setText("N");
+        N.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NActionPerformed(evt);
+            }
+        });
+
+        O.setText("O");
+        O.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OActionPerformed(evt);
+            }
+        });
+
+        P.setText("P");
+        P.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PActionPerformed(evt);
+            }
+        });
+
+        Q.setText("Q");
+        Q.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QActionPerformed(evt);
+            }
+        });
+
+        R.setText("R");
+        R.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RActionPerformed(evt);
+            }
+        });
+
+        S.setText("S");
+        S.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SActionPerformed(evt);
+            }
+        });
+
+        T.setText("T");
+        T.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TActionPerformed(evt);
+            }
+        });
+
+        U.setText("U");
+        U.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                UActionPerformed(evt);
+            }
+        });
+
+        V.setText("V");
+        V.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VActionPerformed(evt);
+            }
+        });
+
+        W.setText("W");
+        W.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                WActionPerformed(evt);
+            }
+        });
+
+        X.setText("X");
+        X.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                XActionPerformed(evt);
+            }
+        });
+
+        Y.setText("Y");
+        Y.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                YActionPerformed(evt);
+            }
+        });
+
+        Z.setText("Z");
+        Z.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ZActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(HangmanTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(162, 162, 162)
-                .addComponent(jLabel2)
-                .addContainerGap(186, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                    .addContainerGap(533, Short.MAX_VALUE)
-                    .addComponent(jButton2)
-                    .addGap(20, 20, 20)))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(N, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
+                            .addComponent(A, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(O, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(P, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(B, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(C, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(D, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Q, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(E, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(R, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(F, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(S, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(G, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(T, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(U, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(V, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(W, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(H, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(I, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(J, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(162, 162, 162)
+                        .addComponent(HangmanStand)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(X, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Y, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Z, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(K, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(L, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(M, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addComponent(Skip)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(HangmanTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
-                .addContainerGap(140, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addGap(80, 80, 80)
-                    .addComponent(jButton2)
-                    .addContainerGap(296, Short.MAX_VALUE)))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(HangmanStand)
+                        .addGap(18, 47, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(A)
+                            .addComponent(B)
+                            .addComponent(C)
+                            .addComponent(D)
+                            .addComponent(E)
+                            .addComponent(F)
+                            .addComponent(G)
+                            .addComponent(H)
+                            .addComponent(I)
+                            .addComponent(J)
+                            .addComponent(K)
+                            .addComponent(L)
+                            .addComponent(M))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(N)
+                            .addComponent(O)
+                            .addComponent(P)
+                            .addComponent(Q)
+                            .addComponent(R)
+                            .addComponent(S)
+                            .addComponent(T)
+                            .addComponent(U)
+                            .addComponent(V)
+                            .addComponent(W)
+                            .addComponent(X)
+                            .addComponent(Y)
+                            .addComponent(Z))
+                        .addGap(18, 18, 18))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(Skip)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -119,6 +416,110 @@ public class Play extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_AActionPerformed
+
+    private void RActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RActionPerformed
+
+    private void BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BActionPerformed
+
+    private void CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CActionPerformed
+
+    private void DActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_DActionPerformed
+
+    private void EActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_EActionPerformed
+
+    private void FActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_FActionPerformed
+
+    private void GActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_GActionPerformed
+
+    private void HActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_HActionPerformed
+
+    private void IActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_IActionPerformed
+
+    private void JActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JActionPerformed
+
+    private void KActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_KActionPerformed
+
+    private void LActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_LActionPerformed
+
+    private void MActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MActionPerformed
+
+    private void NActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NActionPerformed
+
+    private void OActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_OActionPerformed
+
+    private void PActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PActionPerformed
+
+    private void QActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_QActionPerformed
+
+    private void SActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SActionPerformed
+
+    private void TActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TActionPerformed
+
+    private void UActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_UActionPerformed
+
+    private void VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_VActionPerformed
+
+    private void WActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_WActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_WActionPerformed
+
+    private void XActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_XActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_XActionPerformed
+
+    private void YActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_YActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_YActionPerformed
+
+    private void ZActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ZActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ZActionPerformed
 
     /**
      * @param args the command line arguments
@@ -156,9 +557,35 @@ public class Play extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JButton A;
+    private javax.swing.JButton B;
+    private javax.swing.JButton C;
+    private javax.swing.JButton D;
+    private javax.swing.JButton E;
+    private javax.swing.JButton F;
+    private javax.swing.JButton G;
+    private javax.swing.JButton H;
+    private javax.swing.JLabel HangmanStand;
+    private javax.swing.JLabel HangmanTitle;
+    private javax.swing.JButton I;
+    private javax.swing.JButton J;
+    private javax.swing.JButton K;
+    private javax.swing.JButton L;
+    private javax.swing.JButton M;
+    private javax.swing.JButton N;
+    private javax.swing.JButton O;
+    private javax.swing.JButton P;
+    private javax.swing.JButton Q;
+    private javax.swing.JButton R;
+    private javax.swing.JButton S;
+    private javax.swing.JButton Skip;
+    private javax.swing.JButton T;
+    private javax.swing.JButton U;
+    private javax.swing.JButton V;
+    private javax.swing.JButton W;
+    private javax.swing.JButton X;
+    private javax.swing.JButton Y;
+    private javax.swing.JButton Z;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
