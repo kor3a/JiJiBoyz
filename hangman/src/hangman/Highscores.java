@@ -51,19 +51,19 @@ public class Highscores extends javax.swing.JFrame {
         });
 
         jLabel2.setFont(new java.awt.Font("Noteworthy", 1, 13)); // NOI18N
-        jLabel2.setText("jLabel2");
+        jLabel2.setText("ABC ..... 000");
 
         jLabel3.setFont(new java.awt.Font("Noteworthy", 1, 13)); // NOI18N
-        jLabel3.setText("jLabel3");
+        jLabel3.setText("ABC ..... 000");
 
         jLabel4.setFont(new java.awt.Font("Noteworthy", 1, 13)); // NOI18N
-        jLabel4.setText("jLabel4");
+        jLabel4.setText("ABC ..... 000");
 
         jLabel5.setFont(new java.awt.Font("Noteworthy", 1, 13)); // NOI18N
-        jLabel5.setText("jLabel5");
+        jLabel5.setText("ABC ..... 000");
 
         jLabel6.setFont(new java.awt.Font("Noteworthy", 1, 13)); // NOI18N
-        jLabel6.setText("jLabel6");
+        jLabel6.setText("ABC ..... 000");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
