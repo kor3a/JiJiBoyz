@@ -1,8 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/***************************************************************
+ * 
+ * file: GameIntro.java
+ * author: Team Ji-Jo
+ * class: CS 245 - Programming Graphical User Interfaces
+ *
+ * assignment: Hangman V1.0
+ * date last modified: 10/10/17
+ *
+ * purpose: This class is the intro screen that displays the team name. 
+ *
+ ****************************************************************/
+
 package hangman;
 
 import java.awt.event.ActionEvent;
