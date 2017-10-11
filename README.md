@@ -12,3 +12,6 @@ Developers:
 * Subong Jeon
 * Josue Ruiz
 * Ismail Abbas
+
+Project Version 1.0
+* Implemented full 'Hangman' game
