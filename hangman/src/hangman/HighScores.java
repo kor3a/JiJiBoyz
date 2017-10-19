@@ -17,6 +17,12 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 
@@ -32,6 +38,7 @@ public class HighScores extends JPanel implements ActionListener{
     //game score from the rest of the games
     private int score;
 
+    private BufferedReader br;
 
     //Constructor
     public HighScores(GameIntro gameStrt){
@@ -92,6 +99,30 @@ public class HighScores extends JPanel implements ActionListener{
         this.score = score;
     }
 
+    /*
+     * This method will save the high score of the current user, and 
+     * write it to an external file. The scores should be compared after
+     * being saved, and the appropriate scores should be overwritten based
+     * the score saved.
+    */
+    public void readScores() {
+        String file = "scores.txt";
+        // step 1: retrieve score
+        try {
+            br = new BufferedReader(new FileReader(file));
+            String line = br.readLine();
+            while(line != null){
+                
+            }
+            
+            // step 2: write score to file
+            
+            // step 3: MAKE MONEY
+        } catch (IOException ex) {
+            Logger.getLogger(HighScores.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
     //override back to menu
     @Override
     public void actionPerformed(ActionEvent e) {
