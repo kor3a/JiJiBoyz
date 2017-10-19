@@ -65,9 +65,9 @@ public class ColorGame extends JPanel implements ActionListener {
         scoreDisplay = new JLabel("Score: "+score);
         skip = new JButton("Skip");
         skip.addActionListener(this);
-        skip.setBounds(490, 10, 80, 30);
-        clockDisplay.setBounds(280, 1, 200, 25);
-        scoreDisplay.setBounds(200, 1, 200, 25);
+        skip.setBounds(490, 40, 80, 30);
+        clockDisplay.setBounds(200, 1, 250, 25);
+        scoreDisplay.setBounds(120, 1, 200, 25);
         
         add(clockDisplay);
         add(scoreDisplay);
@@ -165,7 +165,7 @@ public class ColorGame extends JPanel implements ActionListener {
                         int hour = calendar.get(Calendar.HOUR_OF_DAY);
 
                         clockDisplay.setText("Time " + hour + ":" + minute + ":" + second
-                                + "         Date " + month + "/" + day + "/" + year);
+                                + "    Date " + month + "/" + day + "/" + year);
                         sleep(1000);
                     }
                 } catch (InterruptedException e) {
