@@ -28,6 +28,9 @@ public class HighScores extends JPanel implements ActionListener{
     //Create Back Button
     private JButton backBttn = new JButton("Back");
     private GameIntro gameStart;
+    
+    //game score from the rest of the games
+    private int score;
 
 
     //Constructor
@@ -82,6 +85,11 @@ public class HighScores extends JPanel implements ActionListener{
 
         this.add(cont1);
         
+    }
+
+    HighScores(GameIntro g, int score) {
+        this(g);
+        this.score = score;
     }
 
     //override back to menu

@@ -25,6 +25,7 @@ public class GameIntro {
     GameMenu menu;
     HighScores highscores;
     EndGame scores;
+    ColorGame colorgame;
     Play game;
 
     //Constructor
