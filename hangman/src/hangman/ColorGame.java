@@ -181,7 +181,25 @@ public class ColorGame extends JPanel implements ActionListener {
      
    @Override
     public void actionPerformed(ActionEvent e) {
-       
+       Object object = e.getSource();
+        JButton button = null;
+
+        if (object instanceof JButton) {
+            button = (JButton) object;
+        }
+
+        if (button != null) {
+            String skip = button.getText().toLowerCase();
+
+            if (skip.equals("skip")) {
+                score = 0;
+                g.frame.getContentPane().setVisible(false);
+                g.frame.getContentPane().remove(this);
+                g.frame.add(new HighScores(g, score));
+                g.frame.getContentPane().setVisible(true);
+            }
+        }
+    
     }
     @Override
     public void paintComponent(Graphics g){
