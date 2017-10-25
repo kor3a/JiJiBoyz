@@ -36,7 +36,13 @@ public class Play extends JPanel implements ActionListener {
     private int score = 100;
     private int error = 0;
     private GameIntro play;
-
+    //Code for paint compomemt to draw body
+    private boolean drawOval = false;
+    private boolean drawBody = false;
+    private boolean drawrightArm = false;
+    private boolean drawleftArm = false;
+    private boolean drawrightLeg = false;
+    private boolean drawleftLeg = false;
     //Constructor
     public Play(GameIntro play) {
         this.play = play;
@@ -54,6 +60,7 @@ public class Play extends JPanel implements ActionListener {
             public void run() {
                 try {
                     for (;;) {
+                        
                         Calendar calendar = new GregorianCalendar();
                         int day = calendar.get(Calendar.DAY_OF_MONTH);
                         int month = calendar.get(Calendar.MONTH) + 1;
@@ -141,6 +148,25 @@ public class Play extends JPanel implements ActionListener {
         g2.fillRect(310, 50, 5, 30);
 
         g2.fillRect(100, 190, 320, 5);
+        
+        if(drawOval){
+            g2.drawOval(300, 80, 20, 20);
+        }
+        if(drawBody){
+            g2.drawLine(312, 100, 312, 155);
+        }
+        if(drawrightArm){
+            g2.drawLine(312, 100, 340, 125);
+        }
+        if(drawleftArm){
+            g2.drawLine(312, 100, 300, 125);
+        }
+        if (drawrightLeg){
+            g2.drawLine(312, 155, 333, 175);
+        }
+        if(drawleftLeg){
+            g2.drawLine(312, 155, 300, 175);
+        }
 
     }
     //Creates a graphics2D to draw the hangman
@@ -165,6 +191,7 @@ public class Play extends JPanel implements ActionListener {
             }
             //Draw head
             if (error == 0 && !word.contains(getChoice())) {
+                drawOval = true;
                 g2.drawOval(300, 80, 20, 20);
                 error++;
                 score -= 10;
@@ -173,6 +200,7 @@ public class Play extends JPanel implements ActionListener {
 
                 //Draw body
             } else if (error == 1 && !word.contains(getChoice())) {
+                drawBody = true;
                 g2.drawLine(312, 100, 312, 155);
                 error++;
                 score -= 10;
@@ -181,6 +209,7 @@ public class Play extends JPanel implements ActionListener {
 
                 //Draw right arm
             } else if (error == 2 && !word.contains(getChoice())) {
+                drawrightArm = true;
                 g2.drawLine(312, 100, 340, 125);
                 error++;
                 score -= 10;
@@ -189,6 +218,7 @@ public class Play extends JPanel implements ActionListener {
 
                 //Draw left arm
             } else if (error == 3 && !word.contains(getChoice())) {
+                drawleftArm = true;
                 g2.drawLine(312, 100, 300, 125);
                 error++;
                 score -= 10;
@@ -197,6 +227,7 @@ public class Play extends JPanel implements ActionListener {
 
                 //Draw left leg
             } else if (error == 4 && !word.contains(getChoice())) {
+                drawleftLeg = true;
                 g2.drawLine(312, 155, 300, 175);
                 error++;
                 score -= 10;
@@ -205,6 +236,7 @@ public class Play extends JPanel implements ActionListener {
 
                 //Draw right leg
             } else if (error == 5 && !word.contains(getChoice())) {
+                drawrightLeg = true;
                 g2.drawLine(312, 155, 333, 175);
                 error++;
                 score -= 10;
