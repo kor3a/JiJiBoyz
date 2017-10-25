@@ -90,7 +90,8 @@ public class Play extends JPanel implements ActionListener {
         container.setLayout(new BoxLayout(container, BoxLayout.PAGE_AXIS));
         container.add(clockDisplay);
         container.add(scoreDisplay);
-        container.add(Box.createRigidArea(new Dimension(100, 240)));
+        //Makes room to create the stand
+        container.add(Box.createRigidArea(new Dimension(100, 200)));
 
         Container bContainer = new Container();
         Container wContainer = new Container();
