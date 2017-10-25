@@ -13,5 +13,8 @@ Developers:
 * Josue Ruiz
 * Ismail Abbas
 
+Project Version 1.1
+* Implemented 'ColorBall' game
+
 Project Version 1.0
 * Implemented full 'Hangman' game
