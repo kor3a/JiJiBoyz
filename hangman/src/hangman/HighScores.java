@@ -38,13 +38,11 @@ public class HighScores extends JPanel implements ActionListener {
 
     private BufferedReader br;
 
-    private String file = "resources\\scores.txt";
-
     //Constructor
     public HighScores(GameIntro gameStrt) {
 
         this.gameStart = gameStrt;
-
+        String file = "scores.txt";
         try {
             br = new BufferedReader(new FileReader(file));
             String line = br.readLine();
