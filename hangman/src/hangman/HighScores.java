@@ -43,6 +43,7 @@ public class HighScores extends JPanel implements ActionListener {
     public HighScores(GameIntro gameStrt) {
 
         this.gameStart = gameStrt;
+
         try {
             Scanner scanner = new Scanner(new FileReader("scores.txt"));
             StringBuilder sb = new StringBuilder();
