@@ -15,8 +15,8 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import static java.lang.Thread.sleep;
 import java.util.Calendar;
+import java.awt.Color;
 import java.util.GregorianCalendar;
-import javafx.scene.paint.Color;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -48,7 +48,7 @@ public class Sudoku extends JPanel implements ActionListener {
     private static final int cluster = 3;
     private static final int gap = 2;
     private static final float fieldPoints = 32f;
-    private static final Color background = Color.LIGHTBLUE;
+    private static final Color background = java.awt.Color.BLUE;
     private Grid[][] grid = new Grid[rows][rows];
     private JPanel[][] panel;
 
