@@ -21,6 +21,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -42,28 +43,28 @@ public class HighScores extends JPanel implements ActionListener {
     public HighScores(GameIntro gameStrt) {
 
         this.gameStart = gameStrt;
-        for (int i = 0; i < hsArray.length; i++) {
-
-            hsArray[i] = new JLabel(" ABC...000");
-
-        }
-//        String file = "scores.txt";
-//        try {
-//            br = new BufferedReader(new FileReader(file));
-//            String line = br.readLine();
-//            while (line != null) {
-//                //iterate through the High Scores Array
+        try {
+            //        for (int i = 0; i < hsArray.length; i++) {
 //
-//            }
+//            hsArray[i] = new JLabel(line);
 //
-//        } catch (FileNotFoundException ex) {
-//            Logger.getLogger(HighScores.class.getName()).log(Level.SEVERE, null, ex);
-//        } catch (IOException ex) {
-//            Logger.getLogger(HighScores.class.getName()).log(Level.SEVERE, null, ex);
 //        }
 
+            Scanner scanner = new Scanner(new FileReader("scores.txt"));
+            StringBuilder sb = new StringBuilder();
+            String line = scanner.next();
+            for (int i = 0; i < hsArray.length; i++) {
+                hsArray[i] = new JLabel(line);
+                line = scanner.nextLine();
+            }
+            scanner.close();
+
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(HighScores.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
         //Creates the "High Scores" title
-        JLabel highS = new JLabel("High Scores");
+        JLabel highS = new JLabel("Highscores");
 
         //Container for empty lines
         Container cont1 = new Container();
