@@ -61,24 +61,6 @@ public class Sudoku extends JPanel implements ActionListener {
     }
 
     private void loadGUI() {
-        setLayout(null);
-        clockDisplay = new JLabel("");
-        scoreDisplay = new JLabel("Score: " + score);
-        quit = new JButton("Quit");
-        quit.setToolTipText("Back to Menu");
-        submit = new JButton("Submit");
-        submit.setToolTipText("Submit your answer");
-        quit.addActionListener(this);
-        submit.addActionListener(this);
-        clockDisplay.setBounds(250, 1, 250, 25);
-        scoreDisplay.setBounds(170, 1, 250, 25);
-        quit.setBounds(490, 270, 80, 30);
-        submit.setBounds(50, 270, 80, 30);
-        add(clockDisplay);
-        add(scoreDisplay);
-        add(quit);
-        add(submit);
-        repaint();
 
         JPanel myPanel = new JPanel(new GridLayout(cluster, cluster));
         myPanel.setBorder(BorderFactory.createEmptyBorder(gap, gap, gap, gap));
@@ -166,6 +148,27 @@ public class Sudoku extends JPanel implements ActionListener {
                 }
             }
         }
+        setLayout(null);
+        clockDisplay = new JLabel("");
+        scoreDisplay = new JLabel("Score: " + score);
+        quit = new JButton("Quit");
+        quit.setToolTipText("Back to Menu");
+        submit = new JButton("Submit");
+        submit.setToolTipText("Submit your answer");
+        quit.addActionListener(this);
+        submit.addActionListener(this);
+        clockDisplay.setBounds(250, 1, 250, 25);
+        scoreDisplay.setBounds(170, 1, 250, 25);
+        quit.setBounds(490, 270, 80, 30);
+        submit.setBounds(50, 270, 80, 30);
+        myPanel.setBounds(135, 20, 340, 340);
+        add(clockDisplay);
+        add(scoreDisplay);
+        add(quit);
+        add(submit);
+
+        add(myPanel);
+        repaint();
 
     }
 
@@ -219,21 +222,22 @@ public class Sudoku extends JPanel implements ActionListener {
                         board[i][j] = grid[i][j].getGuess().getText();
                     }
                 }
-                for(int i = 0; i < board.length; i++){
-                    for(int j = 0; j < board[i].length; j++){
-                        if(!board[i][j].equals(solution[i][j])){
+                for (int i = 0; i < board.length; i++) {
+                    for (int j = 0; j < board[i].length; j++) {
+                        if (!board[i][j].equals(solution[i][j])) {
                             incorrect = true;
-                            if(!grid[i][j].alreadyGuessed){
+                            //Subtract 10 for every incorrect tiles and mark them as guessed
+                            if (!grid[i][j].alreadyGuessed) {
                                 score -= 10;
                                 grid[i][j].alreadyGuessed = true;
                             }
                         }
                     }
                 }
-                
-                if(incorrect == true){
+
+                if (incorrect == true) {
                     JOptionPane.showMessageDialog(g.frame, "Incorrect Answer");
-                }else{
+                } else {
                     g.frame.getContentPane().setVisible(false);
                     g.frame.getContentPane().remove(this);
                     g.frame.add(new EndGame(this.g, score));

@@ -186,7 +186,7 @@ public class Play extends JPanel implements ActionListener {
             if (choice.equals("skip")) {
                 play.frame.getContentPane().setVisible(false);
                 play.frame.getContentPane().remove(this);
-                play.frame.add(new ColorGame(play, 0));
+                play.frame.add(new ColorGame(play, score));
                 play.frame.getContentPane().setVisible(true);
             }
             //Draw head
