@@ -195,7 +195,7 @@ public class ColorGame extends JPanel implements ActionListener {
                 score = 0;
                 g.frame.getContentPane().setVisible(false);
                 g.frame.getContentPane().remove(this);
-                g.frame.add(new Sudoku(g, score));
+                g.frame.add(new SudokuGame(g, score));
                 g.frame.getContentPane().setVisible(true);
             }
         }
