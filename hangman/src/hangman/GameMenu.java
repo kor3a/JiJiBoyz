@@ -33,6 +33,9 @@ public class GameMenu extends JPanel implements ActionListener {
     private GameIntro game;
     // This varible will hold the high score object, a combination of multiple high scores
     private HighScores hs;
+    //GameBackground
+    //ImageIcon arcade = new ImageIcon("resources/background.jpg");
+    Image arcade = Toolkit.getDefaultToolkit().createImage("resources/Background.png");
 
     // This variable will hold the letter choice the player makes
     String choice = "";
@@ -57,6 +60,8 @@ public class GameMenu extends JPanel implements ActionListener {
         add(playButton);
         add(highScoreButton);
         add(creditsButton);
+//        repaint();
+        setBackground(new java.awt.Color(0, 0, 0));
       
     }
 
@@ -107,9 +112,10 @@ public class GameMenu extends JPanel implements ActionListener {
          });
      }
     
-    public void paintComponent (Graphics g) {
-        ImageIcon arcade = new ImageIcon("arcade.jpg");
-        super.paintComponent(g);
-        arcade.paintIcon(this,g,0,0);
-    }
+//    @Override
+//    public void paintComponent (Graphics g) {
+//        super.paintComponent(g);
+//            g.drawImage(arcade, 0, 0, this);
+//        
+//    }
 }

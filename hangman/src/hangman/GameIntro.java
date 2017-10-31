@@ -19,7 +19,7 @@ import java.util.concurrent.TimeUnit;
 public class GameIntro {
 
     //Declare all the variables
-    JFrame frame;
+    static JFrame frame;
     IntroPanel panel;
     Credits credits;
     GameMenu menu;

@@ -243,13 +243,7 @@ public class Sudoku extends JPanel implements ActionListener {
         }
     }
 
-    public void paintComponent(Graphics g) {
-        super.paintComponent(g);
-        Font title = new Font("Arial Black", Font.BOLD, 24);
-        Graphics2D g2 = (Graphics2D) g;
-        g2.setFont(title);
-        g2.drawString("SUDOKU", 5, 20);
-    }
+
 
     private static class Grid {
 
@@ -292,5 +286,14 @@ public class Sudoku extends JPanel implements ActionListener {
         public JTextField getGuess() {
             return guess;
         }
+    }
+    
+        public void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        Font title = new Font("Arial Black", Font.BOLD, 24);
+        Graphics2D g2 = (Graphics2D) g;
+        g2.setFont(title);
+        g2.drawString("SUDOKU", 5, 20);
+        
     }
 }
