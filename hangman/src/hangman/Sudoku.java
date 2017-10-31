@@ -226,7 +226,9 @@ public class Sudoku extends JPanel implements ActionListener {
                     for (int j = 0; j < board[i].length; j++) {
                         if (!board[i][j].equals(solution[i][j])) {
                             incorrect = true;
+                            //Subtract 10 for every incorrect tiles and mark them as guessed
                             if (!grid[i][j].alreadyGuessed) {
+                                score -= 10;
                                 grid[i][j].alreadyGuessed = true;
                             }
                         }
@@ -234,7 +236,6 @@ public class Sudoku extends JPanel implements ActionListener {
                 }
 
                 if (incorrect == true) {
-                    score -= 10;
                     JOptionPane.showMessageDialog(g.frame, "Incorrect Answer");
                 } else {
                     g.frame.getContentPane().setVisible(false);
