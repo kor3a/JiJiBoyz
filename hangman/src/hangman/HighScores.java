@@ -44,12 +44,6 @@ public class HighScores extends JPanel implements ActionListener {
 
         this.gameStart = gameStrt;
         try {
-            //        for (int i = 0; i < hsArray.length; i++) {
-//
-//            hsArray[i] = new JLabel(line);
-//
-//        }
-
             Scanner scanner = new Scanner(new FileReader("scores.txt"));
             StringBuilder sb = new StringBuilder();
             String line = scanner.next();
