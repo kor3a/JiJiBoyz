@@ -22,7 +22,7 @@ import javax.swing.*;
 public class SudokuGame extends JPanel implements ActionListener {
 
     //Variables to be used
-    private Game game;
+    private GameIntro game;
     private int score;
     private String[][] entries;
     private JLabel clockLabel;
@@ -54,7 +54,7 @@ public class SudokuGame extends JPanel implements ActionListener {
     //Panels for the grid
     private JPanel[][] panels;
 
-    public SudokuGame(Game game, int score) {
+    public SudokuGame(GameIntro game, int score) {
         //Initializes some of the variables
         this.game = game;
         this.score = score + 540;
@@ -196,15 +196,11 @@ public class SudokuGame extends JPanel implements ActionListener {
 
             //If quit is pressed, add 0 to the score
             if (b.getText().equalsIgnoreCase("quit")) {
-                try {
-                    score -= 540;
-                    game.frame.getContentPane().setVisible(false);
-                    game.frame.getContentPane().remove(this);
-                    game.frame.add(new ScoreScreen(this.game, score));
-                    game.frame.getContentPane().setVisible(true);
-                } catch (IOException e2) {
-                    e2.getMessage();
-                }
+                score -= 540;
+                game.frame.getContentPane().setVisible(false);
+                game.frame.getContentPane().remove(this);
+                game.frame.add(new EndGame(this.game, score));
+                game.frame.getContentPane().setVisible(true);
             }
 
             //If submit is pressed, check if Sudoku board is correct
@@ -232,14 +228,10 @@ public class SudokuGame extends JPanel implements ActionListener {
                     JOptionPane.showMessageDialog(game.frame,
                             "Incorrect. Please try again.");
                 } else {
-                    try {
-                        game.frame.getContentPane().setVisible(false);
-                        game.frame.getContentPane().remove(this);
-                        game.frame.add(new ScoreScreen(this.game, score));
-                        game.frame.getContentPane().setVisible(true);
-                    } catch (IOException e2) {
-                        e2.getMessage();
-                    }
+                    game.frame.getContentPane().setVisible(false);
+                    game.frame.getContentPane().remove(this);
+                    game.frame.add(new EndGame(this.game, score));
+                    game.frame.getContentPane().setVisible(true);
                 }
             }
         }
@@ -273,11 +265,11 @@ public class SudokuGame extends JPanel implements ActionListener {
     //Class for each entry the player inputs to each panel
     private class entry {
 
-        private Game game;
+        private GameIntro game;
         private JTextField entryGuess;
         private boolean hasBeenGuessed;
 
-        entry(Game game) {
+        entry(GameIntro game) {
             this.game = game;
             hasBeenGuessed = false;
             entryGuess = createField();
