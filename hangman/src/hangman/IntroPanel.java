@@ -12,8 +12,11 @@
  ****************************************************************/
 package hangman;
 
+import static hangman.GameIntro.panel;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -54,6 +57,22 @@ class IntroPanel extends JPanel {
                 moveSquare(mouseE.getX(),mouseE.getY());
             }
         });
+//        this.getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_F1, 0),"forward");
+//        this.getActionMap().put("forward", new AbstractAction(){
+//        @Override
+//        public void actionPerformed(ActionEvent e){
+//            JFrame credit = new JFrame("Ji-Ji Boyz Credits");
+//            credit.setPreferredSize(new Dimension(600, 400));
+//            credit.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//            credit.setResizable(false);
+//            credit.setLocationRelativeTo(null);
+//            credit.pack();
+//            credit.getContentPane().setVisible(false);
+//            credit.getContentPane().remove(panel);
+//            credit.add(GameIntro.credits);
+//            credit.getContentPane().setVisible(true);
+//        }
+//        });
 
     }
 

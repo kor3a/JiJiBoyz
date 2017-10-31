@@ -61,7 +61,7 @@ public class GameMenu extends JPanel implements ActionListener {
         add(highScoreButton);
         add(creditsButton);
 //        repaint();
-        setBackground(new java.awt.Color(0, 0, 0));
+        setBackground(Color.lightGray);
       
     }
 
