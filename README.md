@@ -13,6 +13,9 @@ Developers:
 * Josue Ruiz
 * Ismail Abbas
 
+Project Version 1.2
+* Implemented 'Sudoku' game
+
 Project Version 1.1
 * Implemented 'ColorBall' game
 
