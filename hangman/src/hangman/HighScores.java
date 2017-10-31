@@ -42,24 +42,25 @@ public class HighScores extends JPanel implements ActionListener {
     public HighScores(GameIntro gameStrt) {
 
         this.gameStart = gameStrt;
-        String file = "scores.txt";
-        try {
-            br = new BufferedReader(new FileReader(file));
-            String line = br.readLine();
-            while (line != null) {
-                //iterate through the High Scores Array
-                for (int i = 0; i < hsArray.length; i++) {
+        for (int i = 0; i < hsArray.length; i++) {
 
-                    hsArray[i] = new JLabel(line);
+            hsArray[i] = new JLabel(" ABC...000");
 
-                }
-            }
-
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(HighScores.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IOException ex) {
-            Logger.getLogger(HighScores.class.getName()).log(Level.SEVERE, null, ex);
         }
+//        String file = "scores.txt";
+//        try {
+//            br = new BufferedReader(new FileReader(file));
+//            String line = br.readLine();
+//            while (line != null) {
+//                //iterate through the High Scores Array
+//
+//            }
+//
+//        } catch (FileNotFoundException ex) {
+//            Logger.getLogger(HighScores.class.getName()).log(Level.SEVERE, null, ex);
+//        } catch (IOException ex) {
+//            Logger.getLogger(HighScores.class.getName()).log(Level.SEVERE, null, ex);
+//        }
 
         //Creates the "High Scores" title
         JLabel highS = new JLabel("High Scores");
