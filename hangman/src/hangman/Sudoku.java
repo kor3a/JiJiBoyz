@@ -61,24 +61,7 @@ public class Sudoku extends JPanel implements ActionListener {
     }
 
     private void loadGUI() {
-        setLayout(null);
-        clockDisplay = new JLabel("");
-        scoreDisplay = new JLabel("Score: " + score);
-        quit = new JButton("Quit");
-        quit.setToolTipText("Back to Menu");
-        submit = new JButton("Submit");
-        submit.setToolTipText("Submit your answer");
-        quit.addActionListener(this);
-        submit.addActionListener(this);
-        clockDisplay.setBounds(250, 1, 250, 25);
-        scoreDisplay.setBounds(170, 1, 250, 25);
-        quit.setBounds(490, 270, 80, 30);
-        submit.setBounds(50, 270, 80, 30);
-        add(clockDisplay);
-        add(scoreDisplay);
-        add(quit);
-        add(submit);
-        repaint();
+        
 
         JPanel myPanel = new JPanel(new GridLayout(cluster, cluster));
         myPanel.setBorder(BorderFactory.createEmptyBorder(gap, gap, gap, gap));
@@ -166,6 +149,27 @@ public class Sudoku extends JPanel implements ActionListener {
                 }
             }
         }
+        setLayout(null);
+        clockDisplay = new JLabel("");
+        scoreDisplay = new JLabel("Score: " + score);
+        quit = new JButton("Quit");
+        quit.setToolTipText("Back to Menu");
+        submit = new JButton("Submit");
+        submit.setToolTipText("Submit your answer");
+        quit.addActionListener(this);
+        submit.addActionListener(this);
+        clockDisplay.setBounds(250, 1, 250, 25);
+        scoreDisplay.setBounds(170, 1, 250, 25);
+        quit.setBounds(490, 270, 80, 30);
+        submit.setBounds(50, 270, 80, 30);
+        myPanel.setBounds(135, 20, 340, 340);
+        add(clockDisplay);
+        add(scoreDisplay);
+        add(quit);
+        add(submit);
+        
+        add(myPanel);
+        repaint();
 
     }
 
