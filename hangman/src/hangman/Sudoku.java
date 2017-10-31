@@ -61,7 +61,6 @@ public class Sudoku extends JPanel implements ActionListener {
     }
 
     private void loadGUI() {
-        
 
         JPanel myPanel = new JPanel(new GridLayout(cluster, cluster));
         myPanel.setBorder(BorderFactory.createEmptyBorder(gap, gap, gap, gap));
@@ -167,7 +166,7 @@ public class Sudoku extends JPanel implements ActionListener {
         add(scoreDisplay);
         add(quit);
         add(submit);
-        
+
         add(myPanel);
         repaint();
 
@@ -223,21 +222,21 @@ public class Sudoku extends JPanel implements ActionListener {
                         board[i][j] = grid[i][j].getGuess().getText();
                     }
                 }
-                for(int i = 0; i < board.length; i++){
-                    for(int j = 0; j < board[i].length; j++){
-                        if(!board[i][j].equals(solution[i][j])){
+                for (int i = 0; i < board.length; i++) {
+                    for (int j = 0; j < board[i].length; j++) {
+                        if (!board[i][j].equals(solution[i][j])) {
                             incorrect = true;
-                            if(!grid[i][j].alreadyGuessed){
-                                score -= 10;
+                            if (!grid[i][j].alreadyGuessed) {
                                 grid[i][j].alreadyGuessed = true;
                             }
                         }
                     }
                 }
-                
-                if(incorrect == true){
+
+                if (incorrect == true) {
+                    score -= 10;
                     JOptionPane.showMessageDialog(g.frame, "Incorrect Answer");
-                }else{
+                } else {
                     g.frame.getContentPane().setVisible(false);
                     g.frame.getContentPane().remove(this);
                     g.frame.add(new EndGame(this.g, score));
