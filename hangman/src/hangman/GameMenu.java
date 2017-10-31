@@ -106,4 +106,10 @@ public class GameMenu extends JPanel implements ActionListener {
             }
          });
      }
+    
+    public void paintComponent (Graphics g) {
+        ImageIcon arcade = new ImageIcon("arcade.jpg");
+        super.paintComponent(g);
+        arcade.paintIcon(this,g,0,0);
+    }
 }
