@@ -99,7 +99,7 @@ public class Sudoku extends JPanel implements ActionListener {
                 grid[i][j] = new Grid(g);
                 int rows = i / 3;
                 int cols = j / 3;
-                panel[i][j].add(grid[i][j].guess);
+                panel[rows][cols].add(grid[i][j].guess);
             }
         }
 
