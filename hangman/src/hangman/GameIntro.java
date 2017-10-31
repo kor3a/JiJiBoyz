@@ -25,6 +25,7 @@ public class GameIntro {
     static JFrame frame;
     static IntroPanel panel;
     static Credits credits;
+    static Credits c1;
     static GameMenu menu;
     static HighScores highscores;
     static EndGame scores;
@@ -40,6 +41,8 @@ public class GameIntro {
         game = new Play(this);
         menu = new GameMenu(this);
         credits = new Credits(this);
+        c1 = new Credits(this);
+        c1.removeBack();
 
         frame.setPreferredSize(new Dimension(600, 400));
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -67,7 +70,7 @@ public class GameIntro {
                         credit.setResizable(false);
                         credit.setLocationRelativeTo(null);
                         credit.pack();
-                        credit.add(GameIntro.credits);
+                        credit.add(GameIntro.c1);
                         credit.setVisible(true);
                     }
                 

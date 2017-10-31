@@ -26,6 +26,8 @@ public class Credits extends JPanel implements ActionListener
     
     //Back Buttton declaration.
     private JButton backBttn;
+    
+    Container container;
 
     //Constructor
     public Credits(GameIntro gameStrt)
@@ -38,7 +40,7 @@ public class Credits extends JPanel implements ActionListener
         backBttn.addActionListener(this);
 
         //Create Container
-        Container container = new Container();
+        container = new Container();
 
         //This will make the container for the credits. they will scroll from top-bottom
         container.setLayout(new BoxLayout(container, BoxLayout.PAGE_AXIS));
@@ -65,6 +67,7 @@ public class Credits extends JPanel implements ActionListener
         this.add(container);
         
     }
+    
 
     //override to go back to menu
     @Override
@@ -91,5 +94,9 @@ public class Credits extends JPanel implements ActionListener
                 
             }
         }
+    }
+
+    void removeBack() {
+        container.remove(backBttn);
     }
 }
