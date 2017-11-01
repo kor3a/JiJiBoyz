@@ -16,6 +16,12 @@ package hangman;
 
 import java.awt.*;
 import java.awt.event.*;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.*;
 
 /*
@@ -50,12 +56,46 @@ public class EndGame extends JPanel implements ActionListener {
         // Shifts the label under 'Credits'
         c.add(Box.createRigidArea(new Dimension(0, 40)));
 
+//        try {
+//            Scanner scanner = new Scanner(new FileReader("scores.txt"));
+//            StringBuilder sb = new StringBuilder();
+//            String line = scanner.next();
+//            ArrayList<String> list = new ArrayList<String>();
+//
+//            while (scanner.hasNext()) {
+//                list.add(scanner.next());
+//            }
+//            String first = list.get(0);
+//            String second = list.get(2);
+//            String third = list.get(4);
+//            String fourth = list.get(6);
+//            String fifth = list.get(8);
+//            int[] num = new int[5];
+//            num[0] = Integer.parseInt(list.get(1));
+//            num[1] = Integer.parseInt(list.get(3));
+//            num[2] = Integer.parseInt(list.get(5));
+//            num[3] = Integer.parseInt(list.get(7));
+//            num[4] = Integer.parseInt(list.get(9));
+//
+//            for (int i = 0; i < num.length; i++) {
+//                if (score > num[i]) {
+//                    score = num[i];
+//                }
+//            }
+//
+//            scanner.close();
+//
+//        } catch (FileNotFoundException ex) {
+//            Logger.getLogger(HighScores.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+
         // Label of contributors
         c.add(new JLabel("Your score, as impressive as it is, was " + s));
         c.add(backButton);
 
         // Adding containers to a panel is necessary
         this.add(c);
+
     }
 
     /*
