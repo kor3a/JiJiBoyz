@@ -17,6 +17,9 @@ package hangman;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.File;
+import java.io.IOException;
+import javax.imageio.ImageIO;
 
 /*
  * This class is responsible for displaying the main 'Hangman' menu
@@ -35,7 +38,7 @@ public class GameMenu extends JPanel implements ActionListener {
     private HighScores hs;
     //GameBackground
     //ImageIcon arcade = new ImageIcon("resources/background.jpg");
-    Image arcade = Toolkit.getDefaultToolkit().createImage("resources/Background.png");
+    Image arcade;
 
     // This variable will hold the letter choice the player makes
     String choice = "";
@@ -112,10 +115,15 @@ public class GameMenu extends JPanel implements ActionListener {
          });
      }
     
-//    @Override
-//    public void paintComponent (Graphics g) {
-//        super.paintComponent(g);
-//            g.drawImage(arcade, 0, 0, this);
-//        
-//    }
+    @Override
+    public void paintComponent (Graphics g) {
+        super.paintComponent(g);
+        try{
+        arcade = ImageIO.read(new File("background.jpg"));
+        }catch(IOException e){
+            
+        }
+            g.drawImage(arcade, 0, 0, this);
+        
+    }
 }
