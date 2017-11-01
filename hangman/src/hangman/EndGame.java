@@ -91,6 +91,7 @@ public class EndGame extends JPanel implements ActionListener {
 
         // Label of contributors
         c.add(new JLabel("Your score, as impressive as it is, was " + s));
+        checkScores();
         c.add(backButton);
 
         // Adding containers to a panel is necessary
@@ -121,5 +122,9 @@ public class EndGame extends JPanel implements ActionListener {
                 game.frame.getContentPane().setVisible(true);
             }
         }
+    }
+
+    private void checkScores() {
+    
     }
 }

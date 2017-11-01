@@ -66,7 +66,7 @@ public class GameIntro {
                     if(e.getKeyCode() == KeyEvent.VK_F1){
                         JFrame credit = new JFrame("Ji-Ji Boyz Credits");
                         credit.setPreferredSize(new Dimension(600, 400));
-                        credit.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                        credit.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
                         credit.setResizable(false);
                         credit.setLocationRelativeTo(null);
                         credit.pack();
